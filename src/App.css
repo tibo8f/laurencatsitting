@@ -1,9 +1,9 @@
 :root {
-  --color-background: #f9f7f3;
-  --color-primary: #ef8354;
-  --color-primary-dark: #e4683a;
-  --color-text: #2f2a3b;
-  --color-muted: #6b6473;
+  --color-background: #fff7fb;
+  --color-primary: #ff6fae;
+  --color-primary-dark: #e45492;
+  --color-text: #2f2434;
+  --color-muted: #7b5a73;
   --color-surface: #ffffff;
   --shadow-soft: 0 18px 40px rgba(47, 42, 59, 0.12);
   --shadow-card: 0 14px 30px rgba(47, 42, 59, 0.1);
@@ -41,7 +41,7 @@ a {
   align-items: center;
   gap: clamp(2rem, 6vw, 6rem);
   padding: clamp(3rem, 5vw, 6rem) clamp(1.5rem, 6vw, 3.5rem);
-  background: linear-gradient(135deg, #302a3f 0%, #564168 50%, #ff9b6a 100%);
+  background: linear-gradient(135deg, #3f234a 0%, #c85594 50%, #ff99c6 100%);
   color: #ffffff;
 }
 
@@ -55,7 +55,7 @@ a {
   gap: 0.5rem;
   padding: 0.35rem 1rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(8px);
   font-size: 0.9rem;
   letter-spacing: 0.04em;
@@ -125,7 +125,7 @@ a {
   width: clamp(240px, 25vw, 300px);
   height: clamp(280px, 30vw, 360px);
   border-radius: var(--radius-large);
-  background: radial-gradient(circle at 30% 30%, #ffd7c2, #f08a58 60%, #302a3f);
+  background: radial-gradient(circle at 30% 30%, #ffd4e7, #f774ab 60%, #3f234a);
   box-shadow: var(--shadow-soft);
   position: relative;
   overflow: hidden;
@@ -210,7 +210,7 @@ main {
 }
 
 .services {
-  background: #f2ece8;
+  background: #ffe9f4;
 }
 
 .cards {
@@ -268,7 +268,7 @@ main {
 }
 
 .testimonial-card {
-  background: #fcfaf8;
+  background: #fff1f8;
   border-radius: 18px;
   padding: 1.6rem;
   box-shadow: var(--shadow-card);
@@ -291,7 +291,7 @@ main {
 }
 
 .gallery {
-  background: #efe7df;
+  background: #ffeef8;
 }
 
 .gallery__grid {
@@ -320,7 +320,7 @@ main {
   display: grid;
   place-items: center;
   height: 200px;
-  background: linear-gradient(135deg, rgba(239, 131, 84, 0.85), rgba(62, 37, 69, 0.85));
+  background: linear-gradient(135deg, rgba(255, 111, 174, 0.85), rgba(63, 35, 74, 0.85));
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -367,7 +367,7 @@ main {
 }
 
 .contact__card {
-  background: linear-gradient(135deg, rgba(47, 42, 59, 0.95), rgba(239, 131, 84, 0.9));
+  background: linear-gradient(135deg, rgba(47, 34, 60, 0.95), rgba(255, 111, 174, 0.9));
   color: #fff;
   border-radius: 24px;
   padding: clamp(2.5rem, 5vw, 3.5rem);

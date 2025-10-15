@@ -34,6 +34,8 @@ const galleryItems = [
   { title: 'Michel et Eustache', subtitle: 'Visites du soir & jeux interactifs', image: chat2},
   { title: 'Dymka et Solor', subtitle: 'Soins pendant un long week-end', image: chat1},
   { title: 'Ellis', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
+  { title: 'Nala', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
+  { title: 'Aglae et Mochi', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
 ];
 
 function App() {
@@ -46,7 +48,7 @@ function App() {
           <p>
             Passionnée par les animaux depuis toujours, j'ai 25 ans et garde
             des chats depuis plusieurs années. Basée à Bruxelles, j'accompagne
-            déjà cinq familles qui ne jurent plus que par mes visites
+            déjà six familles qui ne jurent plus que par mes visites
             personnalisées, les nouvelles quotidiennes photo des chats inclues et mon dévouement.
           </p>
           <div className="hero__cta">
