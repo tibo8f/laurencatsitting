@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/laurencatsitting/static/css/main.e06f5658.css",
+    "main.js": "/laurencatsitting/static/js/main.db3fb2f3.js",
+    "static/js/453.e99e10a4.chunk.js": "/laurencatsitting/static/js/453.e99e10a4.chunk.js",
+    "static/media/Ellis.jpeg": "/laurencatsitting/static/media/Ellis.1088c0a92be71e0772f4.jpeg",
+    "static/media/chat1.jpeg": "/laurencatsitting/static/media/chat1.cf1b641b3279a40fbc8a.jpeg",
+    "static/media/chat2.jpeg": "/laurencatsitting/static/media/chat2.9014eae6d620fde73dd6.jpeg",
+    "static/media/Lauren.jpeg": "/laurencatsitting/static/media/Lauren.9f0d97915ae33d415387.jpeg",
+    "static/media/capu.jpeg": "/laurencatsitting/static/media/capu.ad12bd78ab561f029c1a.jpeg",
+    "index.html": "/laurencatsitting/index.html",
+    "main.e06f5658.css.map": "/laurencatsitting/static/css/main.e06f5658.css.map",
+    "main.db3fb2f3.js.map": "/laurencatsitting/static/js/main.db3fb2f3.js.map",
+    "453.e99e10a4.chunk.js.map": "/laurencatsitting/static/js/453.e99e10a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e06f5658.css",
+    "static/js/main.db3fb2f3.js"
+  ]
+}
