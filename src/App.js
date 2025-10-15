@@ -1,9 +1,11 @@
 import './App.css';
 import chat1 from './assets/chat1.jpeg'
-import chat2 from './assets/chat2.jpeg'
+import MichelEtEustash from './assets/MichelEtEustash.png'
 import capu from './assets/capu.jpeg'
 import Lauren from './assets/Lauren.jpeg'
 import Ellis from './assets/Ellis.jpeg'
+import Yama from './assets/YamaCarre.png'
+import DymkaEtSolor from './assets/DymkaEtSolorCarre.png'
 
 const testimonials = [
   {
@@ -36,12 +38,12 @@ const testimonials = [
 ];
 
 const galleryItems = [
-  { title: 'Yama', subtitle: 'Moments câlins pendant les vacances', image: capu  },
-  { title: 'Michel et Eustache', subtitle: 'Visites du soir & jeux interactifs', image: chat2},
+  { title: 'Capu', subtitle: 'Moments câlins pendant les vacances', image: capu  },
+  { title: 'Michel et Eustache', subtitle: 'Visites du soir & jeux interactifs', image: MichelEtEustash},
   { title: 'Dymka et Solor', subtitle: 'Soins pendant un long week-end', image: chat1},
   { title: 'Ellis', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
-  { title: 'Nala', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
-  { title: 'Aglae et Mochi', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
+  { title: 'Yama', subtitle: 'Traitement quotidien & surveillance', image: Yama  },
+  { title: 'Dymka et Solor', subtitle: 'Traitement quotidien & surveillance', image: DymkaEtSolor},
 ];
 
 function App() {
@@ -80,26 +82,38 @@ function App() {
         <section id="about" className="section about">
           <div className="section__intro">
             <h2>Qui est Lauren&nbsp;?</h2>
-            <p>
-              Passionnée par les animaux, je sais gagner la confiance des
-              chats les plus indépendants. Je m'adapte à vos besoins et aux besoins du chat, que
-              ce soit pour jouer, rassurer, donner un traitement ou simplement
-              veiller sur le foyer pendant vos absences.
-            </p>
+            <div className="about__bio">
+              <p>
+                Je m’appelle Lauren, j’ai 25 ans et suis sociothérapeute au sein d’une I.H.P. à Bruxelles. Je suis en
+                possession d’un diplôme de Bachelier en psychologie, d’un Master en criminologie et d’un Master de
+                spécialisation en droits de l’enfant à l’ULB.
+              </p>
+              <p>
+                J’ai deux chats : Lola 18 ans et Capucine 14 ans. Je les considère bien plus que de simples animaux de
+                compagnie, elles font partie intégrante de ma famille et de ma vie.
+             
+                J’ai déjà eu l’occasion de m’occuper d’autres chats que les miens à plusieurs reprises, tant des chats
+                d’appartement que des chats de maison ayant accès à l’extérieur.
+              </p>
+              <p>
+                C’est ainsi que je me propose de prendre soin, en votre absence, de vos petites boules de poils avec
+                autant d’amour que je m’occupe des miennes.
+              </p>
+            </div>
           </div>
           <div className="about__highlights">
             <div>
-              <span className="highlight-number">+4</span>
-              <p>années de gardes de chats à domicile</p>
+              <span className="highlight-number">+10</span>
+              <p>années de gardes de chats</p>
             </div>
             <div>
               <span className="highlight-number">100%</span>
               <p>de retours positifs des familles accompagnées</p>
             </div>
-            <div>
+            {/* <div>
               <span className="highlight-number">Bruxelles</span>
               <p>Je me déplace dans tout Bruxelles</p>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -107,8 +121,7 @@ function App() {
           <div className="section__intro">
             <h2>Services &amp; tarifs indicatifs</h2>
             <p>
-              Durant chaque visite, je nourris les chats, je leur donne de l'eau, je change la litière et surtout 
-              je prend le temps de donner de l'attention aux chats en jouant avec eux et en leur donnant une présence attentive.
+              Durant chaque visite, je garde vos matous, les nourris 🍽️, joue avec eux 🧶, leur donne une friandise s’ils y ont droit 🍬, regarde à ce qu’ils ne fassent pas de bêtises (on les connait, de vrais petits filous 😉), nettoie leur litière 🧻 et les espaces alentours 🧹et bien sûr leur donne tout plein d’amour 💞
             </p>
           </div>
           <div className="cards">
@@ -118,24 +131,24 @@ function App() {
                 Une visite d'une heure par jour pour nourrir, nettoyer et
                 passer du temps avec votre chat.
               </p>
-              <span className="price">À partir de 18&nbsp;€/jour</span>
+              <span className="price">14&nbsp;€/jour</span>
             </article>
             <article className="card">
-              <h3>Deux visites / jour</h3>
+              <h3>Deux visites par jour</h3>
               <p>
                 Matin et soir, idéal pour les chats exigeant une présence plus
                 régulière ou un traitement.
               </p>
-              <span className="price">À partir de 32&nbsp;€/jour</span>
+              <span className="price">25&nbsp;€/jour</span>
             </article>
-            <article className="card">
+            {/* <article className="card">
               <h3>Week-end ou longue durée</h3>
               <p>
                 Pack sur mesure incluant surveillance du foyer, plantes,
                 courrier et comptes rendus détaillés.
               </p>
               <span className="price">Devis personnalisé</span>
-            </article>
+            </article> */}
           </div>
           <p className="section__note">
             Les tarifs définitifs sont confirmés après un premier échange gratuit
@@ -180,7 +193,7 @@ function App() {
                 >
                   <span>{item.title}</span>
                 </div>
-                <figcaption>{item.subtitle}</figcaption>
+                {/* <figcaption>{item.subtitle}</figcaption> */}
               </figure>
             ))}
           </div>
@@ -191,7 +204,7 @@ function App() {
             <h2>Prendre contact avec Lauren</h2>
             <p>
               Vous souhaitez que je garde votre chat durant votre absence ou dicuter d'un devis&nbsp;?
-              Envoyez un message et je vous répond sous 24&nbsp;h.
+              Envoyez un message et je vous réponds sous 24&nbsp;h.
             </p>
             <a className="cta-button" href="mailto:contact@laurencatsitting.fr">
               Écrire à Lauren

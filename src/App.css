@@ -193,6 +193,18 @@ main {
   background: var(--color-surface);
 }
 
+.about__bio {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.about__bio p {
+  margin: 0;
+  color: var(--color-text);
+}
+
 .about__highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
