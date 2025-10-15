@@ -7,25 +7,31 @@ import Ellis from './assets/Ellis.jpeg'
 
 const testimonials = [
   {
-    name: 'Papa de Yama',
+    name: 'Parents de Dymka et Solor',
     quote:
-      'Avant, quand je rentrais de vacances, mon chat était surexcité et stressé. Cette fois, grâce à Lauren qui passait une vraie heure chaque jour avec lui, je l’ai retrouvé calme et heureux. C’était vraiment merveilleux.',
+      "Lauren s'est occupée à merveille de nos deux chats. Très attentive, attentionnée, et une super communication (plein de photos de nos petits amours). Nous recommandons les yeux fermés ! ",
   },
   {
-    name: 'Parents de Michel et Eustache',
+    name: 'Maman de Michel et Eustache',
     quote:
-      'Lauren a pris soin de Michel et Eustache comme si c’étaient les siens. Nous avons été tenu aux nouvelles de nos chats tous les jours via message Whatsapp et photos de nos chats',
+      'Je viens tout juste de rentrer tout est parfait ! Les chats étaient super zen. Ils vont super bien ! Merci beaucoup tu es super !',
+  },
+  // {
+  //   name: 'Géraldine et Nadia, les mamans de Ellis',
+  //   quote:
+  //     'Nous avons retrouvé notre appartement impeccable et un chat apaisé. Les petits comptes rendus quotidiens sont un vrai plus.',
+  // },
+  {
+    name: 'Papa de Yama',
+    quote:
+      "Lauren s'est parfaitement occupée de mon chat Yama pendant le séjour, en prenant le temps de jouer avec lui et de m'envoyer des photos de lui lors de ses visites. Je recommande 👍🏻",
   },
   {
     name: 'Parents de Dymka et Solor',
     quote:
-      'Dymka est parfois timide, mais il s’est très vite senti à l’aise avec Lauren. Lauren est la catsitteuse la plus dévouée que nous avons trouvés.',
+      "On tenait à vraiment te remercier de t’être occupée aussi bien de nos petits amours ! On les a retrouvés en pleine forme :) Merci aussi d’avoir pris soin de l’appartement. ",
   },
-  {
-    name: 'Géraldine et Nadia, les mamans de Ellis',
-    quote:
-      'Nous avons retrouvé notre appartement impeccable et un chat apaisé. Les petits comptes rendus quotidiens sont un vrai plus.',
-  },
+  
   
 ];
 
@@ -64,10 +70,10 @@ function App() {
           <div className="profile-photo">
             <img src={Lauren} alt="Portrait de Lauren" />
           </div>
-          <div className="hero__note">
+          {/* <div className="hero__note">
             <strong>Depuis 2019</strong>
-            <span>5 foyers de chats accompagnés</span>
-          </div>
+            <span>6 foyers de chats accompagnés</span>
+          </div> */}
         </div>
       </header>
       <main>
