@@ -1,28 +1,39 @@
 import './App.css';
+import chat1 from './assets/chat1.jpeg'
+import chat2 from './assets/chat2.jpeg'
+import capu from './assets/capu.jpeg'
+import Lauren from './assets/Lauren.jpeg'
+import Ellis from './assets/Ellis.jpeg'
 
 const testimonials = [
   {
-    name: 'Camille & Milo',
+    name: 'Papa de Yama',
     quote:
-      'Lauren a pris soin de Milo comme si c’était le sien. Messages, photos et câlins assurés : nous sommes partis sereins.',
+      'Avant, quand je rentrais de vacances, mon chat était surexcité et stressé. Cette fois, grâce à Lauren qui passait une vraie heure chaque jour avec lui, je l’ai retrouvé calme et heureux. C’était vraiment merveilleux.',
   },
   {
-    name: 'Thomas & Nougat',
+    name: 'Parents de Michel et Eustache',
     quote:
-      'Nougat est parfois timide, mais il s’est très vite senti à l’aise avec Lauren. Service ultra professionnel et attentionné.',
+      'Lauren a pris soin de Michel et Eustache comme si c’étaient les siens. Nous avons été tenu aux nouvelles de nos chats tous les jours via message Whatsapp et photos de nos chats',
   },
   {
-    name: 'Sophie & Oslo',
+    name: 'Parents de Dymka et Solor',
+    quote:
+      'Dymka est parfois timide, mais il s’est très vite senti à l’aise avec Lauren. Lauren est la catsitteuse la plus dévouée que nous avons trouvés.',
+  },
+  {
+    name: 'Géraldine et Nadia, les mamans de Ellis',
     quote:
       'Nous avons retrouvé notre appartement impeccable et un chat apaisé. Les petits comptes rendus quotidiens sont un vrai plus.',
   },
+  
 ];
 
 const galleryItems = [
-  { title: 'Moka', subtitle: 'Visites du soir & jeux interactifs' },
-  { title: 'Pixel', subtitle: 'Soins pendant un long week-end' },
-  { title: 'Luna', subtitle: 'Traitement quotidien & surveillance' },
-  { title: 'Oslo', subtitle: 'Moments câlins pendant les vacances' },
+  { title: 'Yama', subtitle: 'Moments câlins pendant les vacances', image: capu  },
+  { title: 'Michel et Eustache', subtitle: 'Visites du soir & jeux interactifs', image: chat2},
+  { title: 'Dymka et Solor', subtitle: 'Soins pendant un long week-end', image: chat1},
+  { title: 'Ellis', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
 ];
 
 function App() {
@@ -33,11 +44,10 @@ function App() {
           <span className="hero__badge">Cat sitter à domicile</span>
           <h1>Lauren, votre gardienne de chats de confiance sur Bruxelles</h1>
           <p>
-            Passionnée par les animaux depuis toujours, Lauren a 25 ans et garde
-            des chats depuis plusieurs années. Basée à Bruxelles, elle accompagne
-            déjà cinq familles qui ne jurent plus que par ses visites
-            personnalisées, ses nouvelles quotidiennes et ses attentions
-            câlines.
+            Passionnée par les animaux depuis toujours, j'ai 25 ans et garde
+            des chats depuis plusieurs années. Basée à Bruxelles, j'accompagne
+            déjà cinq familles qui ne jurent plus que par mes visites
+            personnalisées, les nouvelles quotidiennes photo des chats inclues et mon dévouement.
           </p>
           <div className="hero__cta">
             <a className="cta-button" href="#contact">
@@ -49,7 +59,9 @@ function App() {
           </div>
         </div>
         <div className="hero__visual">
-          <div className="profile-photo" aria-label="Portrait de Lauren" />
+          <div className="profile-photo">
+            <img src={Lauren} alt="Portrait de Lauren" />
+          </div>
           <div className="hero__note">
             <strong>Depuis 2019</strong>
             <span>5 foyers de chats accompagnés</span>
@@ -61,8 +73,8 @@ function App() {
           <div className="section__intro">
             <h2>Qui est Lauren&nbsp;?</h2>
             <p>
-              Passionnée par les animaux, Lauren sait gagner la confiance des
-              chats les plus indépendants. Elle sait adapter son approche, que
+              Passionnée par les animaux, je sais gagner la confiance des
+              chats les plus indépendants. Je m'adapte à vos besoins et aux besoins du chat, que
               ce soit pour jouer, rassurer, donner un traitement ou simplement
               veiller sur le foyer pendant vos absences.
             </p>
@@ -77,8 +89,8 @@ function App() {
               <p>de retours positifs des familles accompagnées</p>
             </div>
             <div>
-              <span className="highlight-number">Nancy</span>
-              <p>Interventions sur Nancy et les environs proches</p>
+              <span className="highlight-number">Bruxelles</span>
+              <p>Je me déplace dans tout Bruxelles</p>
             </div>
           </div>
         </section>
@@ -87,17 +99,15 @@ function App() {
           <div className="section__intro">
             <h2>Services &amp; tarifs indicatifs</h2>
             <p>
-              Chaque visite comprend la nourriture, l’eau fraîche, le nettoyage
-              de la litière, les jeux et une présence attentive. Les tarifs
-              s’ajustent selon la fréquence, le nombre de chats et les besoins
-              spécifiques.
+              Durant chaque visite, je nourris les chats, je leur donne de l'eau, je change la litière et surtout 
+              je prend le temps de donner de l'attention aux chats en jouant avec eux et en leur donnant une présence attentive.
             </p>
           </div>
           <div className="cards">
             <article className="card">
               <h3>Visite quotidienne</h3>
               <p>
-                Une visite de 30 minutes par jour pour nourrir, nettoyer et
+                Une visite d'une heure par jour pour nourrir, nettoyer et
                 passer du temps avec votre chat.
               </p>
               <span className="price">À partir de 18&nbsp;€/jour</span>
@@ -131,7 +141,7 @@ function App() {
             <p>
               Ces familles ont confié leur chat à Lauren et partagent leur
               expérience. Chaque garde inclut des nouvelles avec photos pour
-              partir l’esprit tranquille.
+              que vous ayez l'esprit tranquille et soyez tenu informé de votre chat.
             </p>
           </div>
           <div className="testimonials__list">
@@ -148,14 +158,18 @@ function App() {
           <div className="section__intro">
             <h2>Souvenirs de gardes</h2>
             <p>
-              Un aperçu des chats dont Lauren a pris soin. Remplacez ces blocs
-              par vos propres photos pour illustrer vos visites.
+              Un aperçu des chats dont j'ai pris soin et continue à prendre soin.
             </p>
           </div>
           <div className="gallery__grid">
             {galleryItems.map((item) => (
               <figure className="gallery__item" key={item.title}>
-                <div className="gallery__photo" role="img" aria-label={`Photo de ${item.title}`}>
+                <div
+                  className={`gallery__photo${item.image ? ' gallery__photo--with-image' : ''}`}
+                  role="img"
+                  aria-label={`Photo de ${item.title}`}
+                  style={item.image ? { backgroundImage: `url(${item.image})` } : undefined}
+                >
                   <span>{item.title}</span>
                 </div>
                 <figcaption>{item.subtitle}</figcaption>
@@ -168,15 +182,15 @@ function App() {
           <div className="contact__card">
             <h2>Prendre contact avec Lauren</h2>
             <p>
-              Vous souhaitez vérifier les disponibilités ou obtenir un devis&nbsp;?
-              Envoyez un message et Lauren vous répond sous 24&nbsp;h.
+              Vous souhaitez que je garde votre chat durant votre absence ou dicuter d'un devis&nbsp;?
+              Envoyez un message et je vous répond sous 24&nbsp;h.
             </p>
             <a className="cta-button" href="mailto:contact@laurencatsitting.fr">
               Écrire à Lauren
             </a>
             <p className="contact__note">
-              Vous pouvez également proposer vos dates, le nombre de chats et vos
-              attentes. Lauren s’occupe du reste.
+              Vous pouvez proposer vos dates, le nombre de chats, une première idée de votre location et vos
+              attentes.
             </p>
           </div>
         </section>
@@ -184,7 +198,7 @@ function App() {
       <footer className="footer">
         <small>
           © {new Date().getFullYear()} Lauren Cat Sitting — Gardes de chats à
-          domicile en Lorraine
+          domicile sur Bruxelles
         </small>
       </footer>
     </div>
