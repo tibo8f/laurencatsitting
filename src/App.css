@@ -49,6 +49,10 @@ a {
   max-width: 520px;
 }
 
+.hero__content > p {
+  text-align: justify;
+}
+
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -197,21 +201,29 @@ main {
   display: grid;
   gap: 1.1rem;
   margin-top: 1.5rem;
-  text-align: left;
 }
 
 .about__bio p {
   margin: 0;
   color: var(--color-text);
+  text-align: justify;
 }
 
 .about__highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  max-width: var(--max-width);
+  max-width: 720px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.about__highlights > div {
+  width: 100%;
+  max-width: 260px;
 }
 
 .highlight-number {

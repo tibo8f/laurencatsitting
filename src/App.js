@@ -3,9 +3,15 @@ import chat1 from './assets/chat1.jpeg'
 import MichelEtEustash from './assets/MichelEtEustash.png'
 import capu from './assets/capu.jpeg'
 import Lauren from './assets/Lauren.jpeg'
-import Ellis from './assets/Ellis.jpeg'
+import Ellis from './assets/Ellis2.jpeg'
 import Yama from './assets/YamaCarre.png'
 import DymkaEtSolor from './assets/DymkaEtSolorCarre.png'
+import Nala from './assets/Nala.jpeg'
+import Mochi from './assets/Mochi.jpeg'
+import Eustache from './assets/Eustache.jpeg'
+import Michel from './assets/Michel.jpeg'
+import Dymka from './assets/Dymka.jpeg'
+import Solor from './assets/Solor.jpeg'
 
 const testimonials = [
   {
@@ -38,12 +44,17 @@ const testimonials = [
 ];
 
 const galleryItems = [
-  { title: 'Capu', subtitle: 'Moments câlins pendant les vacances', image: capu  },
-  { title: 'Michel et Eustache', subtitle: 'Visites du soir & jeux interactifs', image: MichelEtEustash},
-  { title: 'Dymka et Solor', subtitle: 'Soins pendant un long week-end', image: chat1},
+  // { title: 'Capu', subtitle: 'Moments câlins pendant les vacances', image: capu  },
+  
   { title: 'Ellis', subtitle: 'Traitement quotidien & surveillance', image: Ellis  },
   { title: 'Yama', subtitle: 'Traitement quotidien & surveillance', image: Yama  },
-  { title: 'Dymka et Solor', subtitle: 'Traitement quotidien & surveillance', image: DymkaEtSolor},
+  { title: 'Solor et Dymka', subtitle: 'Traitement quotidien & surveillance', image: DymkaEtSolor},
+  { title: 'Solor', subtitle: 'Soins pendant un long week-end', image: Solor},
+  { title: 'Dymka', subtitle: 'Traitement quotidien & surveillance', image: Dymka},
+  { title: 'Nala', subtitle: 'Nala', image: Nala},
+  { title: 'Mochi', subtitle: 'Mochi', image: Mochi},
+  { title: 'Eustache', subtitle: 'Mochi', image: Eustache},
+  { title: 'Michel', subtitle: 'Mochi', image: Michel},
 ];
 
 function App() {
@@ -81,7 +92,7 @@ function App() {
       <main>
         <section id="about" className="section about">
           <div className="section__intro">
-            <h2>Qui est Lauren&nbsp;?</h2>
+            <h2>Qui suis-je&nbsp;?</h2>
             <div className="about__bio">
               <p>
                 Je m’appelle Lauren, j’ai 25 ans et suis sociothérapeute au sein d’une I.H.P. à Bruxelles. Je suis en
@@ -151,7 +162,7 @@ function App() {
             </article> */}
           </div>
           <p className="section__note">
-            Les tarifs définitifs sont confirmés après un premier échange gratuit
+            Les tarifs définitifs sont confirmés après un premier échange
             pour découvrir vos besoins et ceux de votre chat.
           </p>
         </section>
@@ -206,7 +217,7 @@ function App() {
               Vous souhaitez que je garde votre chat durant votre absence ou dicuter d'un devis&nbsp;?
               Envoyez un message et je vous réponds sous 24&nbsp;h.
             </p>
-            <a className="cta-button" href="mailto:contact@laurencatsitting.fr">
+            <a className="cta-button" href="mailto:catsittingbylauren@gmail.com">
               Écrire à Lauren
             </a>
             <p className="contact__note">
