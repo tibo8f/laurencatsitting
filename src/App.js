@@ -1,7 +1,4 @@
 import './App.css';
-import chat1 from './assets/chat1.jpeg'
-import MichelEtEustash from './assets/MichelEtEustash.png'
-import capu from './assets/capu.jpeg'
 import Lauren from './assets/Lauren.jpeg'
 import Ellis from './assets/Ellis2.jpeg'
 import Yama from './assets/YamaCarre.png'
@@ -12,6 +9,7 @@ import Eustache from './assets/Eustache.jpeg'
 import Michel from './assets/Michel.jpeg'
 import Dymka from './assets/Dymka.jpeg'
 import Solor from './assets/Solor.jpeg'
+import Aglae from './assets/Aglae.jpeg'
 
 const testimonials = [
   {
@@ -55,6 +53,7 @@ const galleryItems = [
   { title: 'Mochi', subtitle: 'Mochi', image: Mochi},
   { title: 'Eustache', subtitle: 'Mochi', image: Eustache},
   { title: 'Michel', subtitle: 'Mochi', image: Michel},
+  { title: 'MiAglae', subtitle: 'Aglae', image: Aglae},
 ];
 
 function App() {
